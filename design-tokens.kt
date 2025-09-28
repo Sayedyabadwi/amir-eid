@@ -3,447 +3,189 @@ object DesignTokens {
 
     // MARK: - Colors
     @JvmStatic
-    val PrimaryLight = Color(0xFF2563EB)
+    val color_primary_ = Color(0xFF28C76F)
 
     @JvmStatic
-    val PrimaryDark = Color(0xFF3B82F6)
+    val color_primary_pressed = Color(0xFF24B364)
 
     @JvmStatic
-    fun Primary(context: Context): Color {
-        return if (isDarkMode(context)) PrimaryDark else PrimaryLight
-    }
+    val color_primary_disabled = Color(0xFF1E7A50)
 
     @JvmStatic
-    val PrimaryPressedLight = Color(0xFF1D4ED8)
+    val color_secondary_ = Color(0xFF7367F0)
 
     @JvmStatic
-    val PrimaryPressedDark = Color(0xFF2563EB)
+    val color_secondary_pressed = Color(0xFF5E54D1)
 
     @JvmStatic
-    fun PrimaryPressed(context: Context): Color {
-        return if (isDarkMode(context)) PrimaryPressedDark else PrimaryPressedLight
-    }
+    val color_secondary_disabled = Color(0xFF3D2B9B)
 
     @JvmStatic
-    val PrimaryActiveLight = Color(0xFF1E40AF)
+    val color_background_ = Color(0xFF121212)
 
     @JvmStatic
-    val PrimaryActiveDark = Color(0xFF1D4ED8)
+    val color_background_surface = Color(0xFF1E1E1E)
 
     @JvmStatic
-    fun PrimaryActive(context: Context): Color {
-        return if (isDarkMode(context)) PrimaryActiveDark else PrimaryActiveLight
-    }
+    val color_background_card = Color(0xFF1A1A1A)
 
     @JvmStatic
-    val PrimaryDisabledLight = Color(0xFF93C5FD)
+    val color_text_main = Color(0xFFFFFFFF)
 
     @JvmStatic
-    val PrimaryDisabledDark = Color(0xFF1E3A8A)
+    val color_text_secondary = Color(0xFFB0B0B0)
 
     @JvmStatic
-    fun PrimaryDisabled(context: Context): Color {
-        return if (isDarkMode(context)) PrimaryDisabledDark else PrimaryDisabledLight
-    }
+    val color_text_placeholder = Color(0xFF666666)
 
     @JvmStatic
-    val SecondaryLight = Color(0xFFF3F4F6)
+    val color_text_disabled = Color(0xFF444444)
 
     @JvmStatic
-    val SecondaryDark = Color(0xFF374151)
+    val color_error_ = Color(0xFFFF6F61)
 
     @JvmStatic
-    fun Secondary(context: Context): Color {
-        return if (isDarkMode(context)) SecondaryDark else SecondaryLight
-    }
+    val color_error_on = Color(0xFFFFFFFF)
 
     @JvmStatic
-    val SecondaryPressedLight = Color(0xFFE5E7EB)
+    val color_success_ = Color(0xFF28C76F)
 
     @JvmStatic
-    val SecondaryPressedDark = Color(0xFF4B5563)
+    val color_success_on = Color(0xFFFFFFFF)
 
     @JvmStatic
-    fun SecondaryPressed(context: Context): Color {
-        return if (isDarkMode(context)) SecondaryPressedDark else SecondaryPressedLight
-    }
+    val color_warning_ = Color(0xFFFF9F43)
 
     @JvmStatic
-    val BgColorLight = Color(0xFFFFFFFF)
-
-    @JvmStatic
-    val BgColorDark = Color(0xFF0F172A)
-
-    @JvmStatic
-    fun BgColor(context: Context): Color {
-        return if (isDarkMode(context)) BgColorDark else BgColorLight
-    }
-
-    @JvmStatic
-    val SurfaceLight = Color(0xFFF9FAFB)
-
-    @JvmStatic
-    val SurfaceDark = Color(0xFF1E293B)
-
-    @JvmStatic
-    fun Surface(context: Context): Color {
-        return if (isDarkMode(context)) SurfaceDark else SurfaceLight
-    }
-
-    @JvmStatic
-    val PrimaryTextLight = Color(0xFF111827)
-
-    @JvmStatic
-    val PrimaryTextDark = Color(0xFFF8FAFC)
-
-    @JvmStatic
-    fun PrimaryText(context: Context): Color {
-        return if (isDarkMode(context)) PrimaryTextDark else PrimaryTextLight
-    }
-
-    @JvmStatic
-    val SecondaryTextLight = Color(0xFF6B7280)
-
-    @JvmStatic
-    val SecondaryTextDark = Color(0xFFCBD5E1)
-
-    @JvmStatic
-    fun SecondaryText(context: Context): Color {
-        return if (isDarkMode(context)) SecondaryTextDark else SecondaryTextLight
-    }
-
-    @JvmStatic
-    val TextDisabledLight = Color(0xFF9CA3AF)
-
-    @JvmStatic
-    val TextDisabledDark = Color(0xFF64748B)
-
-    @JvmStatic
-    fun TextDisabled(context: Context): Color {
-        return if (isDarkMode(context)) TextDisabledDark else TextDisabledLight
-    }
-
-    @JvmStatic
-    val OnPrimaryTextLight = Color(0xFFFFFFFF)
-
-    @JvmStatic
-    val OnPrimaryTextDark = Color(0xFFFFFFFF)
-
-    @JvmStatic
-    fun OnPrimaryText(context: Context): Color {
-        return if (isDarkMode(context)) OnPrimaryTextDark else OnPrimaryTextLight
-    }
-
-    @JvmStatic
-    val CardLight = Color(0xFFFFFFFF)
-
-    @JvmStatic
-    val CardDark = Color(0xFF1E293B)
-
-    @JvmStatic
-    fun Card(context: Context): Color {
-        return if (isDarkMode(context)) CardDark else CardLight
-    }
-
-    @JvmStatic
-    val DividerLight = Color(0xFFE5E7EB)
-
-    @JvmStatic
-    val DividerDark = Color(0xFF334155)
-
-    @JvmStatic
-    fun Divider(context: Context): Color {
-        return if (isDarkMode(context)) DividerDark else DividerLight
-    }
-
-    @JvmStatic
-    val ErrorLight = Color(0xFFDC2626)
-
-    @JvmStatic
-    val ErrorDark = Color(0xFFEF4444)
-
-    @JvmStatic
-    fun Error(context: Context): Color {
-        return if (isDarkMode(context)) ErrorDark else ErrorLight
-    }
-
-    @JvmStatic
-    val SuccessLight = Color(0xFF16A34A)
-
-    @JvmStatic
-    val SuccessDark = Color(0xFF22C55E)
-
-    @JvmStatic
-    fun Success(context: Context): Color {
-        return if (isDarkMode(context)) SuccessDark else SuccessLight
-    }
-
-    @JvmStatic
-    val WarningLight = Color(0xFFD97706)
-
-    @JvmStatic
-    val WarningDark = Color(0xFFF59E0B)
-
-    @JvmStatic
-    fun Warning(context: Context): Color {
-        return if (isDarkMode(context)) WarningDark else WarningLight
-    }
-
-    @JvmStatic
-    val InfoLight = Color(0xFF0EA5E9)
-
-    @JvmStatic
-    val InfoDark = Color(0xFF06B6D4)
-
-    @JvmStatic
-    fun Info(context: Context): Color {
-        return if (isDarkMode(context)) InfoDark else InfoLight
-    }
+    val color_warning_on = Color(0xFF000000)
 
     // MARK: - Typography
     // Font Families
     @JvmStatic
-    val MainFont = "Inter"
+    val typography_fontFamily_primary = "Inter"
 
     @JvmStatic
-    val DisplayFont = "Poppins"
+    val typography_fontFamily_secondary = "Roboto"
 
     // Font Weights
     @JvmStatic
-    val FontWeightLight = FontWeight.w300
+    val typography_fontWeight_regular = FontWeight.w400
 
     @JvmStatic
-    val FontWeightRegular = FontWeight.w400
+    val typography_fontWeight_medium = FontWeight.w500
 
     @JvmStatic
-    val FontWeightMedium = FontWeight.w500
+    val typography_fontWeight_semibold = FontWeight.w600
 
     @JvmStatic
-    val FontWeightSemiBold = FontWeight.w600
-
-    @JvmStatic
-    val FontWeightBold = FontWeight.w700
+    val typography_fontWeight_bold = FontWeight.w700
 
     // Font Sizes
     @JvmStatic
-    val FontSizeXS = 12.sp
+    val typography_fontSize_12 = 12.sp
 
     @JvmStatic
-    val FontSizeS = 14.sp
+    val typography_fontSize_14 = 14.sp
 
     @JvmStatic
-    val FontSizeMD = 16.sp
+    val typography_fontSize_16 = 16.sp
 
     @JvmStatic
-    val FontSizeLG = 18.sp
+    val typography_fontSize_18 = 18.sp
 
     @JvmStatic
-    val FontSizeXL = 20.sp
+    val typography_fontSize_20 = 20.sp
 
     @JvmStatic
-    val FontSizeXXL = 24.sp
-
-    @JvmStatic
-    val FontSizeXXXL = 32.sp
-
-    @JvmStatic
-    val FontSizeDisplay = 48.sp
+    val typography_fontSize_24 = 24.sp
 
     // Line Heights
     @JvmStatic
-    val LineHeightTight = 1.25
+    val typography_lineHeight_small = 16
 
     @JvmStatic
-    val LineHeightNormal = 1.5
+    val typography_lineHeight_medium = 20
 
     @JvmStatic
-    val LineHeightRelaxed = 1.625
-
-    @JvmStatic
-    val LineHeightLoose = 2
+    val typography_lineHeight_large = 24
 
     // Letter Spacings
     @JvmStatic
-    val LetterSpacingTight = -0.002.em
+    val typography_letterSpacing_tight = -0.001.em
 
     @JvmStatic
-    val LetterSpacingNormal = 0.000.em
+    val typography_letterSpacing_normal = 0.000.em
 
     @JvmStatic
-    val LetterSpacingWide = 0.002.em
-
-    @JvmStatic
-    val LetterSpacingWider = 0.003.em
+    val typography_letterSpacing_wide = 0.001.em
 
     // MARK: - Spacing
     @JvmStatic
-    val SpacingXS = 4.dp
+    val size_spacing_xs = 4.dp
 
     @JvmStatic
-    val SpacingS = 8.dp
+    val size_spacing_sm = 8.dp
 
     @JvmStatic
-    val SpacingMD = 16.dp
+    val size_spacing_md = 16.dp
 
     @JvmStatic
-    val SpacingLG = 24.dp
+    val size_spacing_lg = 24.dp
 
     @JvmStatic
-    val SpacingXL = 32.dp
-
-    @JvmStatic
-    val SpacingXXL = 40.dp
-
-    @JvmStatic
-    val SpacingXXXL = 48.dp
-
-    @JvmStatic
-    val SpacingXXXXL = 64.dp
+    val size_spacing_xl = 32.dp
 
     // MARK: - Sizing
     @JvmStatic
-    val SizingXS = 24.dp
+    val size_borderRadius_sm = 4.dp
 
     @JvmStatic
-    val SizingS = 32.dp
+    val size_borderRadius_md = 8.dp
 
     @JvmStatic
-    val SizingMD = 40.dp
+    val size_borderRadius_lg = 16.dp
 
     @JvmStatic
-    val SizingLG = 48.dp
-
-    @JvmStatic
-    val SizingXL = 56.dp
-
-    @JvmStatic
-    val SizingXXL = 64.dp
-
-    @JvmStatic
-    val SizingXXXL = 80.dp
-
-    @JvmStatic
-    val HeightButton = 44.dp
-
-    @JvmStatic
-    val HeightInput = 48.dp
-
-    @JvmStatic
-    val HeightCard = 120.dp
-
-    @JvmStatic
-    val WidthSidebar = 280.dp
-
-    @JvmStatic
-    val WidthModal = 400.dp
-
-    @JvmStatic
-    val WidthContainer = 1200.dp
-
-    @JvmStatic
-    val IconSizeXS = 12.dp
-
-    @JvmStatic
-    val IconSizeS = 16.dp
-
-    @JvmStatic
-    val IconSizeMD = 20.dp
-
-    @JvmStatic
-    val IconSizeLG = 24.dp
-
-    @JvmStatic
-    val IconSizeXL = 32.dp
-
-    // MARK: - Border Radius
-    @JvmStatic
-    val BorderRadiusXS = 4.dp
-
-    @JvmStatic
-    val BorderRadiusS = 8.dp
-
-    @JvmStatic
-    val BorderRadiusMD = 12.dp
-
-    @JvmStatic
-    val BorderRadiusLG = 16.dp
-
-    @JvmStatic
-    val BorderRadiusXL = 20.dp
-
-    @JvmStatic
-    val BorderRadiusXXL = 24.dp
-
-    @JvmStatic
-    val BorderRadiusFull = 9999.dp
-
-    // MARK: - Borders
-    @JvmStatic
-    val BorderThin = 1.dp
-
-    @JvmStatic
-    val BorderMedium = 1.5.dp
-
-    @JvmStatic
-    val BorderThick = 2.dp
-
-    @JvmStatic
-    val BorderFocus = 3.dp
+    val size_borderRadius_round = 9999.dp
 
     // MARK: - Shadows
     // Small Shadows
     @JvmStatic
-    val BoxShadowS = Shadow(
-        color = Color(0xFF000000).copy(alpha = 0.25f),
+    val shadow_sm = Shadow(
+        color = Color(rgba(0,0,0,0.1)).copy(alpha = 0.25f),
         offset = Offset(0.dp, 1.dp),
-        blurRadius = 3.dp
+        blurRadius = 2.dp
     )
 
     // Medium Shadows
     @JvmStatic
-    val BoxShadowMD = Shadow(
-        color = Color(0xFF000000).copy(alpha = 0.25f),
+    val shadow_md = Shadow(
+        color = Color(rgba(0,0,0,0.15)).copy(alpha = 0.25f),
         offset = Offset(0.dp, 4.dp),
         blurRadius = 6.dp
     )
 
     // Large Shadows
     @JvmStatic
-    val BoxShadowLG = Shadow(
-        color = Color(0xFF000000).copy(alpha = 0.25f),
+    val shadow_lg = Shadow(
+        color = Color(rgba(0,0,0,0.2)).copy(alpha = 0.25f),
         offset = Offset(0.dp, 10.dp),
         blurRadius = 15.dp
     )
 
     // MARK: - Opacities
     @JvmStatic
-    val ShadowOpacity = 0.1.f
+    val opacity_disabled = 0.38.f
 
     @JvmStatic
-    val OverlayOpacity = 0.6.f
+    val opacity_hover = 0.08.f
 
     @JvmStatic
-    val DisabledOpacity = 0.4.f
+    val opacity_focus = 0.12.f
 
-    // MARK: - Z-Indices
+    // MARK: - Other Tokens
     @JvmStatic
-    val ZIndexDropdown = 1000
-
-    @JvmStatic
-    val ZIndexModal = 1050
-
-    @JvmStatic
-    val ZIndexTooltip = 1100
-
-    // MARK: - Transitions
-    @JvmStatic
-    val TransitionFast = 150
-
-    @JvmStatic
-    val TransitionNormal = 200
-
-    @JvmStatic
-    val TransitionSlow = 300
+    val $schema = "https://example.com/dark-mode-tokens.schema.json"
 
     // MARK: - Utility Functions
     @JvmStatic
